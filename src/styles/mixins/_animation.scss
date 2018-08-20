@@ -1,0 +1,13 @@
+@import '../settings/animation';
+
+@mixin transition($properties...) {
+  transition-property: $properties;
+  transition-duration: .35s;
+  transition-timing-function: $timing-function;
+}
+
+@mixin transition-duration($duration, $properties) {
+  transition-property: $properties;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+}

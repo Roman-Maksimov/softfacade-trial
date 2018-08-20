@@ -1,0 +1,41 @@
+@import '../../styles/settings/colors';
+@import '../../styles/mixins/animation';
+
+.container {
+  position: relative;
+}
+
+.table {
+  width: 100%;
+
+  td {
+    padding: 10px;
+
+    &:not(:last-child) {
+      border-right: 1px solid $color-lightblue;
+    }
+
+    &:last-child {
+      white-space: nowrap;
+    }
+  }
+
+  tfoot {
+    td {
+      text-align: center;
+    }
+  }
+}
+
+.row {
+  td {
+    @include transition(background-color);
+    cursor: pointer;
+  }
+
+  &:hover {
+    td {
+      background-color: $color-divider;
+    }
+  }
+}

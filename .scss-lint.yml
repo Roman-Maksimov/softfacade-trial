@@ -1,0 +1,18 @@
+scss_files: 'src/**/*.scss'
+
+linters:
+  PropertySortOrder:
+    order: concentric
+    ignore_unspecified: true
+  SelectorFormat:
+    convention: ^[a-zA-Z0-9\-_]+$
+  PropertySpelling:
+    extra_properties:
+      - composes
+  DuplicateProperty:
+    ignore_consecutive:
+      - composes
+  ColorVariable:
+    enabled: false
+  ImportantRule:
+    enabled: false

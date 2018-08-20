@@ -1,0 +1,10 @@
+@import '~normalize.css';
+@import './settings/colors';
+@import './settings/typography';
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $color-font;
+  font-family: $font-base;
+}
